@@ -1,0 +1,3 @@
+module Attendant_Private {
+    export *
+}
