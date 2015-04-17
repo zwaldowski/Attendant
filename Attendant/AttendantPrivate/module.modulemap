@@ -1,4 +1,0 @@
-module AttendantPrivate {
-    header "../AttendantPrivate.h"
-    export *
-}
