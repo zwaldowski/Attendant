@@ -13,3 +13,5 @@ FOUNDATION_EXPORT double AttendantVersionNumber;
 
 //! Project version string for Attendant.
 FOUNDATION_EXPORT const unsigned char AttendantVersionString[];
+
+#import <Attendant/Debounce.h>

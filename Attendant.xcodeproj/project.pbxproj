@@ -18,10 +18,8 @@
 		DBF4533C1AE07C7700461EA6 /* AssociationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453331AE07C7700461EA6 /* AssociationKey.swift */; };
 		DBF4533D1AE07C7700461EA6 /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */; };
 		DBF4533E1AE07C7700461EA6 /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */; };
-		DBF4533F1AE07C7700461EA6 /* AttendantPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453351AE07C7700461EA6 /* AttendantPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		DBF453401AE07C7700461EA6 /* AttendantPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453351AE07C7700461EA6 /* AttendantPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		DBF453411AE07C7700461EA6 /* Debounce.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453361AE07C7700461EA6 /* Debounce.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		DBF453421AE07C7700461EA6 /* Debounce.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453361AE07C7700461EA6 /* Debounce.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DBF453411AE07C7700461EA6 /* Debounce.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453361AE07C7700461EA6 /* Debounce.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBF453421AE07C7700461EA6 /* Debounce.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453361AE07C7700461EA6 /* Debounce.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBF453431AE07C7700461EA6 /* Debounce.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF453371AE07C7700461EA6 /* Debounce.m */; };
 		DBF453441AE07C7700461EA6 /* Debounce.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF453371AE07C7700461EA6 /* Debounce.m */; };
 		DBF453451AE07C7700461EA6 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453381AE07C7700461EA6 /* Debounce.swift */; };
@@ -57,7 +55,6 @@
 		DBF453321AE07C7700461EA6 /* AssociatedObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedObjectView.swift; sourceTree = "<group>"; };
 		DBF453331AE07C7700461EA6 /* AssociationKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociationKey.swift; sourceTree = "<group>"; };
 		DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociationPolicy.swift; sourceTree = "<group>"; };
-		DBF453351AE07C7700461EA6 /* AttendantPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendantPrivate.h; sourceTree = "<group>"; };
 		DBF453361AE07C7700461EA6 /* Debounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debounce.h; sourceTree = "<group>"; };
 		DBF453371AE07C7700461EA6 /* Debounce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Debounce.m; sourceTree = "<group>"; };
 		DBF453381AE07C7700461EA6 /* Debounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
@@ -123,7 +120,6 @@
 				DBF453321AE07C7700461EA6 /* AssociatedObjectView.swift */,
 				DBF453331AE07C7700461EA6 /* AssociationKey.swift */,
 				DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */,
-				DBF453351AE07C7700461EA6 /* AttendantPrivate.h */,
 				DBF453361AE07C7700461EA6 /* Debounce.h */,
 				DBF453371AE07C7700461EA6 /* Debounce.m */,
 				DBF453381AE07C7700461EA6 /* Debounce.swift */,
@@ -165,7 +161,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF4533F1AE07C7700461EA6 /* AttendantPrivate.h in Headers */,
 				DBF453411AE07C7700461EA6 /* Debounce.h in Headers */,
 				DBF452FD1AE07BAD00461EA6 /* Attendant.h in Headers */,
 			);
@@ -175,7 +170,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF453401AE07C7700461EA6 /* AttendantPrivate.h in Headers */,
 				DBF453421AE07C7700461EA6 /* Debounce.h in Headers */,
 				DBF453311AE07BD300461EA6 /* Attendant.h in Headers */,
 			);
@@ -484,10 +478,8 @@
 				INFOPLIST_FILE = Attendant/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Attendant/Attendant.private.modulemap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Attendant";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -506,10 +498,8 @@
 				INFOPLIST_FILE = Attendant/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Attendant/Attendant.private.modulemap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Attendant";
 			};
 			name = Release;
 		};
@@ -564,11 +554,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Attendant/Attendant.private.modulemap";
 				PRODUCT_NAME = Attendant;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Attendant";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,11 +576,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Attendant/Attendant.private.modulemap";
 				PRODUCT_NAME = Attendant;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Attendant";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -655,6 +641,7 @@
 				DBF4530F1AE07BAD00461EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBF453101AE07BAD00461EA6 /* Build configuration list for PBXNativeTarget "AttendantTests" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +650,7 @@
 				DBF453121AE07BAD00461EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBF4532B1AE07BB500461EA6 /* Build configuration list for PBXNativeTarget "MobileAttendant" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +659,7 @@
 				DBF4532D1AE07BB500461EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBF4532E1AE07BB500461EA6 /* Build configuration list for PBXNativeTarget "MobileAttendantTests" */ = {
 			isa = XCConfigurationList;
@@ -679,6 +668,7 @@
 				DBF453301AE07BB500461EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

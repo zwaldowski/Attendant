@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import AttendantPrivate
 
 public struct ActionToken {
     
