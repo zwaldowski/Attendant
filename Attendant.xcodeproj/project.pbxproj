@@ -12,16 +12,12 @@
 		DBF4530A1AE07BAD00461EA6 /* AttendantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453091AE07BAD00461EA6 /* AttendantTests.swift */; };
 		DBF453231AE07BB500461EA6 /* Attendant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF453181AE07BB400461EA6 /* Attendant.framework */; };
 		DBF453311AE07BD300461EA6 /* Attendant.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF452FC1AE07BAD00461EA6 /* Attendant.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBF453391AE07C7700461EA6 /* AssociatedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453321AE07C7700461EA6 /* AssociatedObjectView.swift */; };
-		DBF4533A1AE07C7700461EA6 /* AssociatedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453321AE07C7700461EA6 /* AssociatedObjectView.swift */; };
-		DBF4533B1AE07C7700461EA6 /* AssociationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453331AE07C7700461EA6 /* AssociationKey.swift */; };
-		DBF4533C1AE07C7700461EA6 /* AssociationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453331AE07C7700461EA6 /* AssociationKey.swift */; };
+		DBF453391AE07C7700461EA6 /* AssociationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453321AE07C7700461EA6 /* AssociationType.swift */; };
+		DBF4533A1AE07C7700461EA6 /* AssociationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453321AE07C7700461EA6 /* AssociationType.swift */; };
+		DBF4533B1AE07C7700461EA6 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453331AE07C7700461EA6 /* ObjectAssociation.swift */; };
+		DBF4533C1AE07C7700461EA6 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453331AE07C7700461EA6 /* ObjectAssociation.swift */; };
 		DBF4533D1AE07C7700461EA6 /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */; };
 		DBF4533E1AE07C7700461EA6 /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */; };
-		DBF453411AE07C7700461EA6 /* Debounce.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453361AE07C7700461EA6 /* Debounce.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBF453421AE07C7700461EA6 /* Debounce.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF453361AE07C7700461EA6 /* Debounce.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBF453431AE07C7700461EA6 /* Debounce.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF453371AE07C7700461EA6 /* Debounce.m */; };
-		DBF453441AE07C7700461EA6 /* Debounce.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF453371AE07C7700461EA6 /* Debounce.m */; };
 		DBF453451AE07C7700461EA6 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453381AE07C7700461EA6 /* Debounce.swift */; };
 		DBF453461AE07C7700461EA6 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF453381AE07C7700461EA6 /* Debounce.swift */; };
 /* End PBXBuildFile section */
@@ -52,11 +48,9 @@
 		DBF453091AE07BAD00461EA6 /* AttendantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendantTests.swift; sourceTree = "<group>"; };
 		DBF453181AE07BB400461EA6 /* Attendant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Attendant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF453221AE07BB500461EA6 /* MobileAttendantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAttendantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBF453321AE07C7700461EA6 /* AssociatedObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedObjectView.swift; sourceTree = "<group>"; };
-		DBF453331AE07C7700461EA6 /* AssociationKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociationKey.swift; sourceTree = "<group>"; };
+		DBF453321AE07C7700461EA6 /* AssociationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociationType.swift; sourceTree = "<group>"; };
+		DBF453331AE07C7700461EA6 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
 		DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociationPolicy.swift; sourceTree = "<group>"; };
-		DBF453361AE07C7700461EA6 /* Debounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debounce.h; sourceTree = "<group>"; };
-		DBF453371AE07C7700461EA6 /* Debounce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Debounce.m; sourceTree = "<group>"; };
 		DBF453381AE07C7700461EA6 /* Debounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,11 +111,9 @@
 		DBF452F91AE07BAD00461EA6 /* Attendant */ = {
 			isa = PBXGroup;
 			children = (
-				DBF453321AE07C7700461EA6 /* AssociatedObjectView.swift */,
-				DBF453331AE07C7700461EA6 /* AssociationKey.swift */,
+				DBF453321AE07C7700461EA6 /* AssociationType.swift */,
 				DBF453341AE07C7700461EA6 /* AssociationPolicy.swift */,
-				DBF453361AE07C7700461EA6 /* Debounce.h */,
-				DBF453371AE07C7700461EA6 /* Debounce.m */,
+				DBF453331AE07C7700461EA6 /* ObjectAssociation.swift */,
 				DBF453381AE07C7700461EA6 /* Debounce.swift */,
 				DBF452FC1AE07BAD00461EA6 /* Attendant.h */,
 				DBF452FA1AE07BAD00461EA6 /* Supporting Files */,
@@ -161,7 +153,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF453411AE07C7700461EA6 /* Debounce.h in Headers */,
 				DBF452FD1AE07BAD00461EA6 /* Attendant.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,7 +161,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF453421AE07C7700461EA6 /* Debounce.h in Headers */,
 				DBF453311AE07BD300461EA6 /* Attendant.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,9 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF453391AE07C7700461EA6 /* AssociatedObjectView.swift in Sources */,
-				DBF4533B1AE07C7700461EA6 /* AssociationKey.swift in Sources */,
-				DBF453431AE07C7700461EA6 /* Debounce.m in Sources */,
+				DBF453391AE07C7700461EA6 /* AssociationType.swift in Sources */,
+				DBF4533B1AE07C7700461EA6 /* ObjectAssociation.swift in Sources */,
 				DBF4533D1AE07C7700461EA6 /* AssociationPolicy.swift in Sources */,
 				DBF453451AE07C7700461EA6 /* Debounce.swift in Sources */,
 			);
@@ -351,9 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF4533A1AE07C7700461EA6 /* AssociatedObjectView.swift in Sources */,
-				DBF4533C1AE07C7700461EA6 /* AssociationKey.swift in Sources */,
-				DBF453441AE07C7700461EA6 /* Debounce.m in Sources */,
+				DBF4533A1AE07C7700461EA6 /* AssociationType.swift in Sources */,
+				DBF4533C1AE07C7700461EA6 /* ObjectAssociation.swift in Sources */,
 				DBF4533E1AE07C7700461EA6 /* AssociationPolicy.swift in Sources */,
 				DBF453461AE07C7700461EA6 /* Debounce.swift in Sources */,
 			);

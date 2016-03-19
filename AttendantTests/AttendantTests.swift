@@ -17,45 +17,50 @@ import Attendant
 
 class AttendantTests: XCTestCase {
     
-    private static let objectKey: AssociationKey<String> = association()
-    
+    private static let objectKey = Association.forValue(ofType: String.self)
+
     func testAssociation() {
         let target = NSObject()
         let testValue = "This is a test."
-        
-        associatedObjects(target).set(value: testValue, forKey: self.dynamicType.objectKey)
-        
-        if let retrievedValue = associatedObjects(target).value(forKey: self.dynamicType.objectKey) {
-            XCTAssertEqual(retrievedValue, testValue)
-        } else {
-            XCTFail()
-        }
+
+        self.dynamicType.objectKey[target] = testValue
+        XCTAssertEqual(self.dynamicType.objectKey[target], testValue)
     }
     
     func testDebounce() {
-        let expection = expectationWithDescription("function gets called once")
-        let key = eventAssocation()
+        let expection = expectationWithDescription("function gets called at least once")
+        let key = Association.forEvent(uponType: self.dynamicType)
         
         var counter = 0
-        let fn = { () -> () in
-            ++counter
+        func fn(type: AttendantTests.Type) {
+            counter += 1
             expection.fulfill()
         }
-        
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
-        debounce(self.dynamicType, key, fn)
+
+        key.perform(body: fn)
+        key.perform(body: fn)
+        key.perform(body: fn)
+        key.perform(body: fn)
+        key.perform(body: fn)
+        key.perform(body: fn)
+        key.perform(body: fn)
+        key.perform(body: fn)
+        key.perform(body: fn)
         
         waitForExpectationsWithTimeout(2, handler: nil)
         
-        XCTAssertEqual(counter, 1)
+        XCTAssertEqual(counter, 1, "function gets called only once")
+    }
+
+    func testCancelPerform() {
+        let key = Association.forEvent(uponType: self.dynamicType)
+
+        func fn(type: AttendantTests.Type) {
+            XCTFail("Function should not be called")
+        }
+
+        key.perform(body: fn)
+        key.cancel()
     }
     
 }
