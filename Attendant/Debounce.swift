@@ -48,13 +48,12 @@ private extension FunctionAssociation {
         dispatch_source_set_timer(timer, UInt64(delay * Double(NSEC_PER_SEC)), DISPATCH_TIME_FOREVER, NSEC_PER_SEC / 10)
     }
 
-    private func makeTimer(delay delay: NSTimeInterval, upon queue: dispatch_queue_t, handler: dispatch_block_t, cancelHandler: dispatch_block_t) -> dispatch_source_t {
+    private func makeTimer(delay delay: NSTimeInterval, upon queue: dispatch_queue_t, handler: () -> Void, cancelHandler: () -> Void) -> dispatch_source_t {
         let timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)!
-        let wrapped = dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS) {
+        dispatch_source_set_event_handler(timer) {
             handler()
             dispatch_source_cancel(timer)
         }
-        dispatch_source_set_event_handler(timer, wrapped)
         dispatch_source_set_cancel_handler(timer, cancelHandler)
         reset(timer: timer, delay: delay)
         return timer
