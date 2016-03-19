@@ -20,11 +20,11 @@ public enum AssociationPolicy {
     
     private var intValue: Int {
         switch self {
-        case .Strong(false):  return OBJC_ASSOCIATION_RETAIN_NONATOMIC
-        case .Strong(true):   return OBJC_ASSOCIATION_RETAIN
-        case .Copying(false): return OBJC_ASSOCIATION_COPY_NONATOMIC
-        case .Copying(true):  return OBJC_ASSOCIATION_COPY
-        default:              return OBJC_ASSOCIATION_ASSIGN
+        case .Strong(false):  return objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC
+        case .Strong(true):   return objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN
+        case .Copying(false): return objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC
+        case .Copying(true):  return objc_AssociationPolicy.OBJC_ASSOCIATION_COPY
+        default:              return objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN
         }
     }
     
